@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
@@ -19,31 +25,96 @@
   </head>
   <body>
     <div class="container">
-      <h1>Sydney</h1>
-      <p>
-        Last updated: 03:05<br />
-        Friday, 13 November 2020
-      </p>
-      <h2>14°</h2>
-      <img src="img/wi-night-alt-cloudy-gusts.svg" alt="" />
-      <p>
-        Feels like: 12 <br />
-        Humidity: 82% <br />
-        Wind speed: 26 km/h
-      </p>
-      <p>Scattered clouds</p>
-      <p>
-        05:00<br />
-        14°
-      </p>
-      <p>
-        Made by Sanne P. Code on
-        <a
-          href="https://github.com/sannepetersvirtualgraphicdesigner/react-weather-app"
-          >Github</a
-        >
-        2020
-      </p>
+      <div class="weather-app">
+        <nav class="header">
+          <div class="row">
+            <div class="col-4">
+              <a href="https://www.sannepeters.com" target="_blank"
+                ><img
+                  src="img/sp-logo.svg"
+                  class="logo"
+                  alt="Sanne Peters Virtual Graphic Designer"
+              /></a>
+            </div>
+            <div class="col-4">
+              <form id="search-form">
+                <input
+                  type="text"
+                  placeholder="Which place?"
+                  class="form-control"
+                  autocomplete="off"
+                  spellcheck="false"
+                  id="city-input"
+                />
+                <button>
+                  <i class="fas fa-search search-icon"></i>
+                </button>
+              </form>
+            </div>
+            <div class="col-4">
+              <a href="#" id="celsius-link" class="active">°C</a> /
+              <a href="#" id="fahrenheit-link">°F</a>
+              <a href="#" id="current"><i class="fas fa-map-marker-alt"></i></a>
+            </div>
+          </div>
+        </nav>
+        <main>
+          <div class="overview">
+            <div class="row">
+              <div class="col-12">
+                <h1 id="city">Sydney</h1>
+                <ul class="date-text">
+                  <li>Last updated: <span id="time">03:05</span></li>
+                  <li><span id="date">Friday, 13 November 2020</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 weather-temperature">
+              <span id="temperature">14°C</span>
+            </div>
+            <div class="col-4">
+              <!-- <i id="icon"></i> -->
+              <img src="img/wi-night-alt-cloudy-gusts.svg" alt="" />
+            </div>
+            <div class="col-4 temp-parameters">
+              <ul>
+                <li>Feels like: <span id="feels"></span>12°</li>
+              </ul>
+              <ul>
+                <li>Humidity: <span id="humidity"></span>82 %</li>
+              </ul>
+              <ul>
+                <li>Wind speed: <span id="wind"></span>26 km/h</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row description">
+            <div class="col-12" id="description">Scattered clouds</div>
+          </div>
+
+          <div class="row weather-forecast" id="forecast">
+            <img src="img/wi-day-cloudy-gusts.svg" alt="" />
+            <p>
+              05:00<br />
+              14°
+            </p>
+          </div>
+        </main>
+        <footer>
+          <small
+            >Made by Sanne P. Code on
+            <a
+              href="https://github.com/sannepetersvirtualgraphicdesigner/react-weather-app"
+              target="_blank"
+              >GitHub</a
+            >
+            2020
+          </small>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
