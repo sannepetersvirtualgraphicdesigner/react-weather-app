@@ -1,3 +1,145 @@
+nav,
+main {
+  text-align: center;
+  margin: 0px auto;
+}
+footer {
+  text-align: center;
+  margin: 20px auto 0;
+}
 body {
   font-family: "Montserrat", sans-serif;
+  color: #100e0e;
+}
+h1 {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 3.25em;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+div:first-letter {
+  text-transform: capitalize;
+}
+form {
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+}
+button {
+  left: -15%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.logo {
+  width: 180px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.form-control {
+  height: 50px;
+  border-radius: 50px;
+  border: 0.5px solid #ffffff;
+  padding: 0;
+}
+.search-icon {
+  font-size: 1rem;
+  position: relative;
+  color: #100e0e;
+}
+a {
+  color: #f638dc;
+}
+.active {
+  color: #100e0e;
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
+}
+.weather-app {
+  max-width: 1280px;
+  margin: 30px auto;
+}
+.overview {
+  margin-bottom: 30px;
+}
+.date-text {
+  color: #8f8f8f;
+}
+.description {
+  font-size: 150%;
+  margin-top: 5px;
+}
+.col-12 {
+  margin-bottom: 20px;
+}
+.weather-temperature {
+  font-size: 2em;
+  font-weight: 700;
+  padding: 60px 0;
+  text-align: right;
+}
+#city-input {
+  border: 1px solid rgb(17, 17, 17, 0.1);
+  border-radius: 30px;
+  background: #e6dedd;
+  margin-top: 0;
+  max-width: 100%;
+  opacity: 50%;
+  padding: 20px 20px;
+  transition: all 200ms ease-in-out;
+  width: 500px;
+}
+#city-input:hover {
+  border: 1px solid rgb(17, 17, 17, 0.1);
+  opacity: 90%;
+}
+#icon {
+  font-size: 170px;
+  opacity: 100%;
+  transition: all 150ms ease-in-out;
+  color: #f638dc;
+}
+#icon:hover {
+  opacity: 70%;
+}
+.temp-parameters {
+  text-align: left;
+  padding: 60px 0;
+}
+.forecast-degrees strong {
+  color: #8f8f8f;
+}
+i.forecast-icon {
+  font-size: 60px;
+  opacity: 100%;
+  transition: all 150ms ease-in-out;
+  color: #f638dc;
+}
+i.forecast-icon:hover {
+  opacity: 70%;
+}
+.weather-forecast {
+  margin-top: 20px;
+}
+.fa-map-marker-alt {
+  border: 1px solid #f638dc;
+  border-radius: 50%;
+  color: #f638dc;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+.fa-map-marker-alt:hover {
+  opacity: 70%;
 }
